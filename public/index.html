@@ -16,7 +16,7 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styel.css">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -28,43 +28,44 @@
     -->
     <title>Netrikann | we are watching you</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-danger text-white">
-      <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#">NETRIKANN</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#">RULES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">REPORT A CRIME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="/">LOGIN</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="/">SIGN-UP</a>
-            </li>
+  <body class="bg-dark">
 
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+      <nav class="navbar navbar-expand-lg bg-danger text-white">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">NETRIKANN</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">RULES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">REPORT A CRIME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/">LOGIN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/">SIGN-UP</a>
+              </li>
+  
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
+      </nav>
+      <div  class="position-absolute top-50 start-50 translate-middle">
+        <div id="root"></div>
+        &nbsp; &nbsp; &nbsp; &nbsp;<h1 class="text-white">&nbsp; &nbsp;Helmet</h1>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button class="btn btn-primary bg-danger type="button" onclick="init()">Start</button>
+        <div id="webcam-container"></div>
+        <div id="label-container" class="text-white"></div>
       </div>
-    </nav>
-    <div  class="position-absolute top-50 start-50 translate-middle">
-      <div id="root"></div>
-      &nbsp; &nbsp; &nbsp; &nbsp;<h1 class="text-white">&nbsp; &nbsp;Helmet</h1>
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button class="btn btn-primary bg-danger type="button" onclick="init()">Start</button>
-      <div id="webcam-container"></div>
-      <div id="label-container" class="text-white"></div>
-    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
