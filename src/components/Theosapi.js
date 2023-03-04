@@ -65,9 +65,9 @@ function TheosAPI() {
 
   return (
     <div style={{ padding: '20px' }}>
-      <h1>License plate </h1>
-      {detecting ? <h3>Detecting...</h3> : <div><label htmlFor='file-upload'class="btn btn-primary" style={{cursor:'pointer', display:'inline-block', padding:'8px 12px', borderRadius: '5px', border:'1px solid #ccc'}}>Click to select an image</label><input id='file-upload' type='file' accept='image/*' onChange={onFileSelected} style={{display:'none'}}/></div>}
-      {detected && <h3><pre>{detections}</pre></h3>}
+      <h1 className='text-white'>License plate </h1>
+      {detecting ? <h3 className='text-white'>Detecting...</h3> : <div><label htmlFor='file-upload'class="btn btn-primary bg-danger" style={{cursor:'pointer', display:'inline-block', padding:'8px 12px', borderRadius: '5px', border:'1px solid #ccc'}}>Click to select an image</label><input id='file-upload' type='file' accept='image/*' onChange={onFileSelected} style={{display:'none'}}/></div>}
+      {detected && <h6><pre className='text-white'>{detections}</pre></h6>}
       {error && <h3 style={{color:'red'}}>{error}</h3>}
     </div>
   );

@@ -1,7 +1,6 @@
 import Theosapi from './components/Theosapi'
 
 
-
 function App() {
   return (
     <div>
